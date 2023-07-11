@@ -10,8 +10,8 @@ const currentTime = document.querySelector(".time-elapsed");
 const duration = document.querySelector(".time-duration");
 const fullScreenBtn = document.querySelector(".fullscreen");
 const speed = document.querySelector(".player-speed");
-// Play & Pause ----------------------------------- //
 
+// Play & Pause ----------------------------------- //
 function showPlayIcon() {
   playBtn.classList.replace("fa-pause", "fa-play");
   playBtn.setAttribute("title", "Play");
@@ -139,11 +139,7 @@ function closeFullscreen() {
 let fullscreen = false;
 
 function toggleFullScreen() {
-  if (!fullscreen) {
-    openFullscreen(player);
-  } else {
-    closeFullscreen();
-  }
+  `!fullScreen ? openFullscreen(player) : closeFullscreen();
   fullscreen = !fullscreen;
 }
 
